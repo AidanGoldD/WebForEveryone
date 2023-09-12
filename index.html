@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="icon" href="images/WFE_Logo.svg" sizes="any" type="image/svg+xml">
+        <title>Color Blindness Simulator</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="colorMatrices.css">
+
+    </head>
+
+    
+<body>
+  <header>
+    <div id="names">
+      <a href="coming-soon.html"><img src="images/WFE_Logo.svg" height="40"></a>
+      <a href="coming-soon.html"><h5>Web For Everyone</h5></a>
+    </div>
+    <div id="links">
+      <a href="coming-soon.html"><p>Coming Soon</p></a>
+      &emsp;
+      <a href="coming-soon.html"><p>Coming Soon</p></a>
+      &emsp;
+      <a href="index.html"><p>Color Blindness Simulator</p></a>
+    </div>
+  </header>
+  
+  <main>
+    <div id="synopsis">
+    <h1>Color Blindness Simulator</h1>
+    <p>With around 8% of the worlwide population suffering from some sort of colorblindness, it is important to make sure that your website is accessible to those with color vision deficiencies.</p>
+    <br>
+    <p>Using the research of Gustavo M. Machado, Manuel M. Oliveira, and Leandro A. F. Fernandes in their study "A Physiologically-based Model for Simulation of Color Vision Deficiency" (viewable online <a href="https://www.inf.ufrgs.br/~oliveira/pubs_files/CVD_Simulation/CVD_Simulation.html" target="_blank">here</a>), you can test your sight through the eyes of those of varying colorblindness.</p>
+    </div>
+  
+    <div id="urload">
+    <div style="flex-basis: 50%">
+      <input type="url" id="urlTxtbx" placeholder="Paste URL">
+      <p>You can put the url of a website here<br>*some websites do not work</p>
+    </div>
+    
+    <div><h6>OR</h6></div>
+    
+    <div style="flex-basis: 50%">
+      <label for="fileSelect">Upload Folder
+        <input type="file" id="fileSelect" webkitdirectory>
+      </label>
+      <p>Upload a folder with your website materials<br>*must have a index.html file</p></div>
+    </div>
+  
+    <div id="options">
+    <div id="button-container">
+      <button id="regBtn" class="selectedButton">Regular Vision</button>
+      <button id="proBtn">Protanopia</button>
+      <button id="deuBtn">Deuteranopia</button>
+      <button id="triBtn">Tritanopia</button>
+      <button id="achBtn">Achromatopsia</button>
+    </div>
+    
+    <div id="slide-container">
+      <input type="range" min="0" max="100" value="100" step="10" id="slider">
+      <div>
+        <p><span id="slidePercent"></span>%</p>
+      </div>
+    </div>
+    </div>
+  
+    <br>
+
+    <div id="display">
+    <div style="width:15%;"></div>
+    
+    <div style="width:70%;">
+      <iframe id="iframeView" src="/exampleSite/example.html"></iframe>
+    </div>
+    
+    <div style="width:12%;">
+      <img id="fullBtn" src="images/Fullscreen_Logo.svg">
+    </div>
+    </div>
+  </main>
+<script src="scripts.js"></script></body>
+
+</html>
